@@ -577,8 +577,8 @@ body.env-locked { overflow: hidden; }
   display: block;
   transition: transform 0.9s cubic-bezier(0.5, 0, 0.6, 1);
 }
-/* final beat: drift up and through, as if stepping into the invitation */
-.env-scene.zoom .env { transform: scale(1.7) translateY(6%); }
+/* final beat: a gentle lift as the scene hands off to the page */
+.env-scene.zoom .env { transform: scale(1.12) translateY(-3%); }
 @media (prefers-reduced-motion: no-preference) {
   .env-scene:not(.opening) .env { animation: envBreathe 3.4s ease-in-out infinite; }
 }
@@ -628,10 +628,9 @@ body.env-locked { overflow: hidden; }
   overflow: hidden;
 }
 .env__seams { position: absolute; inset: 0; width: 100%; height: 100%; }
-.env__corner { position: absolute; width: 38%; height: auto; opacity: 0.9; }
-.env__corner--bl { bottom: 0; left: 0; transform: scaleY(-1); }
-.env__corner--br { bottom: 0; right: 0; transform: scale(-1, -1) scaleY(-1) scaleX(-1) rotate(0deg); }
-.env__corner--br { bottom: 0; right: 0; transform: scaleX(-1) scaleY(-1); }
+.env__corner { position: absolute; width: 33%; height: auto; opacity: 0.7; }
+.env__corner--bl { bottom: 0; left: 0;  transform: scaleY(-1); }
+.env__corner--br { bottom: 0; right: 0; transform: scale(-1); }
 
 /* the flap: a genuine two-sided panel that hinges on its top edge */
 .env__flap {
@@ -728,7 +727,7 @@ body.env-locked { overflow: hidden; }
 
 /* whole scene dissolves away */
 .env-scene {
-  transition: opacity 0.8s ease, visibility 0.8s;
+  transition: opacity 0.55s ease, visibility 0.55s;
 }
 .env-scene.done { opacity: 0; visibility: hidden; pointer-events: none; }
 
@@ -1153,9 +1152,9 @@ body.entered .hero__inner > * {
 
     scene.classList.add("opening");                                     // seal releases, flap swings back
     setTimeout(function () { scene.classList.add("letter-up"); },  780); // card slides up out of the pocket
-    setTimeout(function () { scene.classList.add("zoom"); },      1850); // drift through the card
-    setTimeout(function () { scene.classList.add("done"); enterPage(); }, 2150);
-    setTimeout(function () { scene.remove(); }, 3100);                   // tidy up the DOM
+    setTimeout(function () { scene.classList.add("zoom"); },      1900); // gentle lift
+    setTimeout(function () { scene.classList.add("done"); enterPage(); }, 2020);
+    setTimeout(function () { scene.remove(); }, 2800);                   // tidy up the DOM
   }
 
   if (scene && openBtn) {
