@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Abir &amp; Ayman — Wedding Invitation</title>
+<title>Abir &amp; Ayman, Wedding Invitation</title>
 <meta name="description" content="Friday, the 4th of September 2026 · 8:00 in the evening · Baridhara DOHS Convention Centre, Dhaka. Together with their families, Abir and Ayman request the honor of your presence." />
 
 <!-- Link preview (WhatsApp / Messenger / Facebook). og:image must be an
@@ -21,9 +21,9 @@
 
 <style>
 /* =====================================================================
-   ABIR & AYMAN — WEDDING INVITATION
+   ABIR & AYMAN, WEDDING INVITATION
    A single self-contained page. Photos live in ./photos/
-   Edit the text directly in the HTML below — it is all plain markup.
+   Edit the text directly in the HTML below, it is all plain markup.
    The one value the script needs is the date on <body data-wedding="…">
    ===================================================================== */
 
@@ -49,7 +49,7 @@
   --font-script:  "Pinyon Script", cursive;
   --font-body:    "Jost", system-ui, -apple-system, sans-serif;
 
-  /* Fluid type — scales smoothly, no breakpoint jumps */
+  /* Fluid type, scales smoothly, no breakpoint jumps */
   --step--1: clamp(0.72rem, 0.68rem + 0.18vw, 0.82rem);
   --step-0:  clamp(0.9rem,  0.86rem + 0.2vw,  1rem);
   --step-1:  clamp(1.1rem,  1rem + 0.5vw,     1.4rem);
@@ -132,7 +132,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .hero {
   position: relative;
   min-height: 100vh;
-  min-height: 100svh; /* respects mobile browser chrome — avoids the over-tall feel */
+  min-height: 100svh; /* respects mobile browser chrome, avoids the over-tall feel */
   display: grid;
   place-items: center;
   /* Horizontal padding is deliberately larger than .hero__frame's inset, so
@@ -165,7 +165,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .hero__inner, .shell, .narrow { position: relative; z-index: 2; }
 .hero__inner { text-align: center; width: min(100%, 46rem); }
 
-/* Wax seal — softly glowing, with a slow halo pulse */
+/* Wax seal, softly glowing, with a slow halo pulse */
 .seal {
   position: relative;
   width: clamp(4rem, 13vw, 5.25rem);
@@ -547,7 +547,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .footer__mark { margin-top: 2.25rem; font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.3em; color: color-mix(in srgb, var(--ink-soft) 55%, transparent); }
 
 /* =====================================================================
-   ENVELOPE INTRO — a sealed envelope that opens on tap, lifts out the
+   ENVELOPE INTRO, a sealed envelope that opens on tap, lifts out the
    card, then dissolves to reveal the page. Only active when JS is on.
    ===================================================================== */
 .env-scene {
@@ -612,13 +612,13 @@ body.env-locked { overflow: hidden; }
   transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
 }
 /* The card rises but stays *behind* the front panel, exactly as a real card
-   slides up out of its pocket — only the emerged part shows. */
+   slides up out of its pocket, only the emerged part shows. */
 .env-scene.letter-up .env__letter { transform: translateY(-72%); }
 .env__letter .m { font-family: var(--font-script); font-size: clamp(1.8rem, 7vw, 2.6rem); color: var(--rose-deep); line-height: 1; }
 .env__letter .k { font-size: clamp(0.55rem, 2.2vw, 0.68rem); text-transform: uppercase; letter-spacing: 0.3em; text-indent: 0.3em; color: var(--gold); }
 .env__letter .dt { font-family: var(--font-display); font-style: italic; font-size: clamp(0.85rem, 3vw, 1.05rem); color: var(--ink-soft); }
 
-/* front panel of the pocket — the card stays behind this, as it would in life */
+/* front panel of the pocket, the card stays behind this, as it would in life */
 .env__front {
   position: absolute;
   inset: 0;
@@ -648,7 +648,7 @@ body.env-locked { overflow: hidden; }
 
 /* The flap is one panel clipped to a triangle. As it passes the halfway
    point of the turn, its blush liner cross-fades in and the garland fades
-   out — so you read it as the flap turning over, without relying on
+   out, so you read it as the flap turning over, without relying on
    backface-visibility (which clip-path breaks). */
 .env__flap {
   background: linear-gradient(175deg, #F7EEE0 0%, #EADCC6 78%, #DFCDB0 100%);
@@ -954,10 +954,10 @@ body.entered .hero__inner > * {
     <p class="hero__date">Friday, the 4th of September 2026 <span style="white-space:nowrap">· Dhaka</span></p>
 
     <div class="countdown" id="countdown">
-      <div class="cd"><div class="cd__box"><span class="cd__num" id="cd-d">—</span></div><span class="cd__label">Days</span></div>
-      <div class="cd"><div class="cd__box"><span class="cd__num" id="cd-h">—</span></div><span class="cd__label">Hours</span></div>
-      <div class="cd"><div class="cd__box"><span class="cd__num" id="cd-m">—</span></div><span class="cd__label">Minutes</span></div>
-      <div class="cd"><div class="cd__box"><span class="cd__num" id="cd-s">—</span></div><span class="cd__label">Seconds</span></div>
+      <div class="cd"><div class="cd__box"><span class="cd__num" id="cd-d">00</span></div><span class="cd__label">Days</span></div>
+      <div class="cd"><div class="cd__box"><span class="cd__num" id="cd-h">00</span></div><span class="cd__label">Hours</span></div>
+      <div class="cd"><div class="cd__box"><span class="cd__num" id="cd-m">00</span></div><span class="cd__label">Minutes</span></div>
+      <div class="cd"><div class="cd__box"><span class="cd__num" id="cd-s">00</span></div><span class="cd__label">Seconds</span></div>
     </div>
   </div>
 
@@ -972,7 +972,7 @@ body.entered .hero__inner > * {
 <!-- ========================= INVITATION NOTE ========================= -->
 <section class="note">
   <div class="narrow reveal">
-    <p>Two families, one joyful beginning — and a day made complete by the people who have loved us along the way.</p>
+    <p>Two families, one joyful beginning, and a day made complete by the people who have loved us along the way.</p>
     <p class="sig">Abir &amp; Ayman</p>
   </div>
 </section>
@@ -990,19 +990,19 @@ body.entered .hero__inner > * {
       <article class="t-item reveal">
         <p class="t-date">2023</p>
         <h3 class="t-title">Where it began</h3>
-        <p class="t-text">A chance meeting during an emergency brought them together — what started as one person helping another turned into a bond neither of them expected.</p>
+        <p class="t-text">A chance meeting during an emergency brought them together, what started as one person helping another turned into a bond neither of them expected.</p>
       </article>
 
       <article class="t-item reveal">
         <p class="t-date">2025</p>
         <h3 class="t-title">A question, answered</h3>
-        <p class="t-text">The question was asked, and the answer came without a moment's hesitation — a promise to build a future together.</p>
+        <p class="t-text">The question was asked, and the answer came without a moment's hesitation, a promise to build a future together.</p>
       </article>
 
       <article class="t-item reveal">
         <p class="t-date">4th June, 2026</p>
         <h3 class="t-title">Officially engaged</h3>
-        <p class="t-text">Surrounded by family, they marked their engagement — the final step before the wedding they've been dreaming of.</p>
+        <p class="t-text">Surrounded by family, they marked their engagement, the final step before the wedding they've been dreaming of.</p>
       </article>
     </div>
   </div>
@@ -1160,7 +1160,7 @@ body.entered .hero__inner > * {
   if (scene && openBtn) {
     document.body.classList.add("env-locked");
     openBtn.addEventListener("click", openEnvelope);
-    // Let the whole backdrop be a target too — easier to hit on a phone.
+    // Let the whole backdrop be a target too, easier to hit on a phone.
     scene.addEventListener("click", openEnvelope);
     openBtn.focus({ preventScroll: true });
     // Safety net: never leave a visitor stuck behind the envelope.
