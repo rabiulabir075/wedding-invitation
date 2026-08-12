@@ -214,14 +214,14 @@
 <div class="fixed top-6 left-6 z-40 font-script text-3xl text-rose-700 select-none" data-bind="couple.monogram">A &amp; A</div>
 
 <!-- ============ HERO ============ -->
-<section id="hero" class="relative h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-b from-rose-50 via-ivory to-ivory">
+<section id="hero" class="relative w-full flex items-center justify-center overflow-hidden bg-gradient-to-b from-rose-50 via-ivory to-ivory py-20 sm:py-0 sm:h-screen">
 
   <!-- decorative botanical frame -->
   <svg class="absolute inset-0 w-full h-full" viewBox="0 0 800 600" preserveAspectRatio="none" fill="none">
-    <path class="frame-line" d="M120 60 C 60 140, 60 460, 120 540" stroke="#B08D4F" stroke-width="1.4" opacity="0.55"/>
-    <path class="frame-line" d="M680 60 C 740 140, 740 460, 680 540" stroke="#B08D4F" stroke-width="1.4" opacity="0.55"/>
-    <path class="frame-line" d="M150 55 C 260 20, 540 20, 650 55" stroke="#B08D4F" stroke-width="1.4" opacity="0.55"/>
-    <path class="frame-line" d="M150 545 C 260 580, 540 580, 650 545" stroke="#B08D4F" stroke-width="1.4" opacity="0.55"/>
+    <path class="frame-line" d="M90 55 C 55 140, 55 460, 90 545" stroke="#B08D4F" stroke-width="1.4" opacity="0.55"/>
+    <path class="frame-line" d="M710 55 C 745 140, 745 460, 710 545" stroke="#B08D4F" stroke-width="1.4" opacity="0.55"/>
+    <path class="frame-line" d="M120 50 C 260 18, 540 18, 680 50" stroke="#B08D4F" stroke-width="1.4" opacity="0.55"/>
+    <path class="frame-line" d="M120 550 C 260 582, 540 582, 680 550" stroke="#B08D4F" stroke-width="1.4" opacity="0.55"/>
   </svg>
 
   <!-- ornate corner filigree -->
@@ -242,17 +242,15 @@
     <circle cx="30" cy="45" r="2" fill="#B08D4F"/><circle cx="45" cy="30" r="2" fill="#B08D4F"/>
   </svg>
 
-  <!-- wax-seal monogram, tucked above the names -->
-  <div class="absolute top-[10%] left-1/2 -translate-x-1/2">
-    <div class="seal-pop" style="animation-delay:0.1s">
+  <div class="relative text-center px-6 hero-fade" style="animation-delay:0.2s">
+    <!-- wax-seal monogram, tucked above the names -->
+    <div class="seal-pop mx-auto mb-6 w-16 h-16" style="animation-delay:0.1s">
       <div class="w-16 h-16 rounded-full bg-rose-700 shadow-[0_2px_10px_rgba(0,0,0,0.15)] flex items-center justify-center border border-gold-300/60">
         <span class="font-script text-3xl text-gold-300 leading-none pt-1" data-bind="couple.initials">AA</span>
       </div>
     </div>
-  </div>
 
-  <div class="relative text-center px-6 pt-14 sm:pt-20 hero-fade" style="animation-delay:0.2s">
-    <p class="uppercase tracking-[0.35em] text-xs sm:text-sm text-sage-700/80 mb-6" data-bind="couple.familyLine">Together with their families</p>
+    <p class="uppercase tracking-[0.35em] text-xs sm:text-sm text-sage-700/80 mb-6 max-w-[15rem] sm:max-w-none mx-auto" data-bind="couple.familyLine">Together with their families</p>
     <h1 class="font-display text-5xl sm:text-7xl leading-tight text-ink flex items-center justify-center flex-wrap gap-2 sm:gap-4">
       <span data-bind="couple.partner1">Abir</span>
       <span class="font-script text-6xl sm:text-8xl text-gold-700 -mt-2 sm:-mt-4">&amp;</span>
@@ -267,7 +265,7 @@
     </svg>
 
     <p class="font-display italic text-xl sm:text-2xl text-rose-700" data-bind="couple.invitationLine">request the honor of your presence</p>
-    <p class="mt-4 uppercase tracking-[0.3em] text-xs sm:text-sm text-ink/70" data-bind="couple.dateDisplay">Friday, the 4th of September 2026 · Dhaka</p>
+    <p class="mt-4 uppercase tracking-[0.3em] text-xs sm:text-sm text-ink/70 max-w-[15rem] sm:max-w-none mx-auto" data-bind="couple.dateDisplay">Friday, the 4th of September 2026 · Dhaka</p>
 
     <!-- Countdown -->
     <div class="mt-9 flex justify-center gap-3 sm:gap-6" id="countdown">
